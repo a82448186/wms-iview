@@ -492,7 +492,7 @@
             },
             handleClose() {
                 this.hideMenu();
-                this.filterable && this.selectFirstMatchItem()
+                !this.multiple && this.filterable && this.selectFirstMatchItem()
             },
             selectFirstMatchItem() {
                 let matchObj = {};
